@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raksha Bandhan Gift Quest 🪢❤️</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Floating Decorations -->
+    <div class="floating floating-1">🌸</div>
+    <div class="floating floating-2">🪢</div>
+    <div class="floating floating-3">✨</div>
+    <div class="floating floating-4">🌺</div>
+    <div class="floating floating-5">❤️</div>
+
+
+    <!-- ================================================= -->
+    <!-- START SCREEN -->
+    <!-- ================================================= -->
+
+    <section id="startScreen" class="screen active">
+
+        <div class="card start-card">
+
+            <div class="rakhi">🪢</div>
+
+            <h1>A Special Raksha Bandhan Surprise</h1>
+
+            <div class="divider">✦ ✦ ✦</div>
+
+            <p class="intro">
+                This isn't just a gift... 🎁
+            </p>
+
+            <p>
+                This Raksha Bandhan, I wanted to make something
+                a little different and a little special. ❤️
+            </p>
+
+            <p>
+                There are <strong>15 stages</strong> waiting for you.
+            </p>
+
+            <div class="rules">
+
+                <p>🔒 Every stage starts locked.</p>
+
+                <p>🧠 Answer the question correctly.</p>
+
+                <p>🔓 Unlock the next stage.</p>
+
+                <p>🎁 Complete all 15 stages to discover your surprise.</p>
+
+            </div>
+
+            <p class="special-message">
+                And remember...
+                <br>
+                <strong>The real gift is waiting at the end. ❤️</strong>
+            </p>
+
+            <button onclick="startQuest()" class="main-btn">
+                🪢 START THE JOURNEY 🪢
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- STAGE MAP -->
+    <!-- ================================================= -->
+
+    <section id="mapScreen" class="screen">
+
+        <div class="card map-card">
+
+            <div class="small-rakhi">🪢</div>
+
+            <h1>Raksha Bandhan Quest</h1>
+
+            <p class="subtitle">
+                Complete each stage to unlock the next ❤️
+            </p>
+
+            <div id="stageMap" class="stage-map"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION SCREEN -->
+    <!-- ================================================= -->
+
+    <section id="questionScreen" class="screen">
+
+        <div class="card question-card">
+
+            <div class="stage-title">
+
+                <span id="stageNumber">
+                    Stage 1
+                </span>
+
+                <span id="progressText">
+                    1 / 15
+                </span>
+
+            </div>
+
+
+            <div class="progress-container">
+
+                <div id="progressBar" class="progress-bar"></div>
+
+            </div>
+
+
+            <div class="question-icon">
+                🧠
+            </div>
+
+
+            <h2 id="questionText"></h2>
+
+
+            <div id="optionsContainer" class="options"></div>
+
+
+            <p id="message" class="message"></p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- SUCCESS SCREEN -->
+    <!-- ================================================= -->
+
+    <section id="successScreen" class="screen">
+
+        <div class="card success-card">
+
+            <div class="success-icon">
+                🎉
+            </div>
+
+            <h1 id="successTitle">
+                Correct!
+            </h1>
+
+            <p id="successMessage">
+                You unlocked the next stage! 🔓
+            </p>
+
+            <button onclick="continueQuest()" class="main-btn">
+                CONTINUE ➜
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- FINAL GIFT SCREEN -->
+    <!-- ================================================= -->
+
+    <section id="giftScreen" class="screen">
+
+        <div class="gift-card">
+
+            <div class="gift-decoration">
+                🎁 ✨ ❤️ ✨ 🎁
+            </div>
+
+
+            <div class="gift-icon">
+                🎁
+            </div>
+
+
+            <h1>
+                YOU DID IT! ❤️
+            </h1>
+
+
+            <p class="completed-text">
+                15 / 15 Stages Completed!
+            </p>
+
+
+            <p class="journey-text">
+                You answered every question correctly<br>
+                and completed the entire journey!
+            </p>
+
+
+            <p class="proud-text">
+                I'm really proud of you! 🥰
+            </p>
+
+
+            <div class="gold-divider">
+                ✦ ───────── ❤️ ───────── ✦
+            </div>
+
+
+            <p class="waiting-text">
+                Now... the moment you've been waiting for... ✨
+            </p>
+
+
+            <h2 class="gift-ready">
+                🎁 YOUR RAKSHA BANDHAN GIFT IS READY! 🎁
+            </h2>
+
+
+            <p class="love-text">
+                I hope you love it! ❤️
+            </p>
+
+
+            <!-- Your requested sentence -->
+
+            <p class="attitude-text">
+                💡 Lose the attitude, give respect, and earn respect. 😌
+            </p>
+
+
+            <!-- Google Drive Gift -->
+
+            <a
+                href="https://drive.google.com/file/d/19h19ogQ_ZLr3J1jCncVAGOf7AG2umO2f/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="main-btn gift-btn"
+            >
+                🎁 OPEN YOUR GIFT ❤️
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
